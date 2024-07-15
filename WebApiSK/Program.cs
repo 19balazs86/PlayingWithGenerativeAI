@@ -1,3 +1,5 @@
+using Microsoft.SemanticKernel;
+using Shared;
 using WebApiSK.Endpoints;
 
 namespace WebApiSK;
@@ -11,7 +13,7 @@ public static class Program
 
         // Add services to the container
         {
-
+            services.addAndConfigureKernel();
         }
 
         WebApplication app = builder.Build();
@@ -22,5 +24,12 @@ public static class Program
         }
 
         app.Run();
+    }
+
+    private static void addAndConfigureKernel(this  IServiceCollection services)
+    {
+        services.AddKernel();
+
+        services.AddOpenAIChatCompletion(OpenAIConfig.Models.GPT_3_5_Turbo, OpenAIConfig.ApiKey);
     }
 }

@@ -1,4 +1,6 @@
-﻿namespace WebApiSK.Endpoints;
+﻿using Microsoft.SemanticKernel;
+
+namespace WebApiSK.Endpoints;
 
 public static class WeatherForecastEndpoints
 {
@@ -7,26 +9,23 @@ public static class WeatherForecastEndpoints
         app.MapGet("/weatherforecast", getWeatherForecast);
     }
 
-    private static async Task<WeatherForecast> getWeatherForecast()
+    private static async Task<WeatherForecast> getWeatherForecast(Kernel kernel)
     {
-        await Task.Delay(500);
+        int temperature = Random.Shared.Next(-20, 55);
+
+        string summary = await kernel.InvokePromptAsync<string>($"Very short description of the weather at {temperature}°C") ?? "n/a";
 
         return new WeatherForecast
         {
             Date         = DateOnly.FromDateTime(DateTime.Now),
-            TemperatureC = Random.Shared.Next(-20, 55),
-            Summary      = WeatherForecast.Summaries[Random.Shared.Next(WeatherForecast.Summaries.Length)]
+            TemperatureC = temperature,
+            Summary      = summary
         };
     }
 }
 
 public sealed class WeatherForecast
 {
-    public static readonly string[] Summaries =
-    [
-        "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-    ];
-
     public required DateOnly Date { get; init; }
 
     public required int TemperatureC { get; init; }
