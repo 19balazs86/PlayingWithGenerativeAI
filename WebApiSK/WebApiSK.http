@@ -1,0 +1,6 @@
+@WebApiSK_HostAddress = http://localhost:5096
+
+GET {{WebApiSK_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
