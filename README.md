@@ -8,6 +8,8 @@ Prerequisite: the examples use the [OpenAI platform](https://platform.openai.com
 - ConsoleAppSK
   - KernelInvokePrompt.cs: Simple example of using the `Kernel` by calling the InvokePrompt method
   - ChatCompletion.cs: Using the `IChatCompletionService` with a preserved `ChatHistory`
+- WebApiSK
+  - Endpoint: '/weatherforecast': Simple example of using the `Kernel` by calling the InvokePrompt method to describe the weather at x°C
 
 #### Resources
 
