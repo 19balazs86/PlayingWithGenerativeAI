@@ -7,5 +7,7 @@ public static class Program
     public static async Task Main(string[] args)
     {
         await KernelInvokePrompt.Run("Who are you?", enableLogging: false);
+
+        await ChatCompletion.Run();
     }
 }
