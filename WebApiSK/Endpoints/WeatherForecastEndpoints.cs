@@ -6,7 +6,7 @@ public static class WeatherForecastEndpoints
 {
     public static void MapWeatherForecastEndpoints(this IEndpointRouteBuilder app)
     {
-        app.MapGet("/weatherforecast", getWeatherForecast);
+        app.MapGet("/weather-forecast", getWeatherForecast);
     }
 
     private static async Task<WeatherForecast> getWeatherForecast(Kernel kernel)

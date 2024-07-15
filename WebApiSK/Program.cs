@@ -13,7 +13,7 @@ public static class Program
 
         // Add services to the container
         {
-            services.addAndConfigureKernel();
+            services.addSemanticKernel();
         }
 
         WebApplication app = builder.Build();
@@ -21,15 +21,26 @@ public static class Program
         // Configure the HTTP request pipeline
         {
             app.MapWeatherForecastEndpoints();
+
+            app.MapCurrentTimeEndpoints();
         }
 
         app.Run();
     }
 
-    private static void addAndConfigureKernel(this  IServiceCollection services)
+    private static void addSemanticKernel(this IServiceCollection services)
     {
-        services.AddKernel();
+        // https://learn.microsoft.com/en-us/semantic-kernel/concepts/plugins/adding-native-plugins?pivots=programming-language-csharp#inject-a-plugin-collection
+        // Documentation says: Kernel is extremely lightweight, so creating a new one for each use as a transient is not a performance concern
+        // You can omit the services.AddKernel(), add Kernel and KernelPluginCollection manually, if you need different life time
 
-        services.AddOpenAIChatCompletion(OpenAIConfig.Models.GPT_3_5_Turbo, OpenAIConfig.ApiKey);
+        // --> Add: OpenAI chat completion
+        services.AddOpenAIChatCompletion(OpenAIConfig.Models.GPT_3_5_Turbo, OpenAIConfig.ApiKey); // Registered as singleton
+
+        // --> Add: Kernel
+        IKernelBuilder kernelBuilder = services.AddKernel(); // Kernel and KernelPluginCollection registered as transient
+
+        // --> Add: Plugins
+        kernelBuilder.Plugins.AddCurrentTimePlugin();
     }
 }
