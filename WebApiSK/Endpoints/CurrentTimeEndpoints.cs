@@ -34,7 +34,9 @@ public static class CurrentTimeEndpoints
 
     private static async Task<string> getCurrentTime(Kernel kernel, IChatCompletionService chatCompletionService, CancellationToken ct)
     {
-        var chatHistory = new ChatHistory();
+        // Instead of a plugin, we can use "Pre-fetched Data Retrieval" by adding a system message with the current time
+
+        var chatHistory = new ChatHistory(/*$"Current date and time in local: '{DateTime.Now}'"*/);
 
         chatHistory.AddUserMessage("Short description of the current time");
 
