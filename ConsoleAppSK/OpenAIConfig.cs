@@ -4,7 +4,7 @@ public static class OpenAIConfig
 {
     public static class Models
     {
-        public const string GPT_3_5_turbo = "gpt-3.5-turbo-0125";
+        public const string GPT_3_5_Turbo = "gpt-3.5-turbo-0125";
         public const string GPT_4o        = "gpt-4o";
     }
 

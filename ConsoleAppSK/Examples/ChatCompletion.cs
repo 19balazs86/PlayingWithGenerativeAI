@@ -1,5 +1,4 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using Microsoft.SemanticKernel;
+﻿using Microsoft.SemanticKernel;
 using Microsoft.SemanticKernel.ChatCompletion;
 
 namespace ConsoleAppSK.Examples;
@@ -10,15 +9,9 @@ public static class ChatCompletion
     {
         ConsoleColor defaultConsoleColor = Console.ForegroundColor;
 
-        IKernelBuilder builder      = Kernel.CreateBuilder();
-        IServiceCollection services = builder.Services;
-
-        // Add services to the container
-        {
-            services.AddOpenAIChatCompletion(OpenAIConfig.Models.GPT_3_5_turbo, OpenAIConfig.ApiKey);
-        }
-
-        Kernel kernel = builder.Build();
+        Kernel kernel = Kernel.CreateBuilder()
+            .AddOpenAIChatCompletion(OpenAIConfig.Models.GPT_3_5_Turbo, OpenAIConfig.ApiKey)
+            .Build();
 
         string systemMessage = getSystemMessage();
 

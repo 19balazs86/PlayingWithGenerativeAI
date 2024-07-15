@@ -16,7 +16,7 @@ public static class KernelInvokePrompt
 
         // Add services to the container
         {
-            services.AddOpenAIChatCompletion(OpenAIConfig.Models.GPT_3_5_turbo, OpenAIConfig.ApiKey);
+            services.AddOpenAIChatCompletion(OpenAIConfig.Models.GPT_3_5_Turbo, OpenAIConfig.ApiKey);
 
             if (enableLogging)
             {
