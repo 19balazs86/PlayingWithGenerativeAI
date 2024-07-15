@@ -1,4 +1,4 @@
-﻿namespace ConsoleAppSK;
+﻿namespace Shared;
 
 public static class OpenAIConfig
 {
