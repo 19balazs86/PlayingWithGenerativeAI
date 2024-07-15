@@ -1,6 +1,14 @@
 # Playing with Generative AI
 This repository contains projects demonstrating the use of AI with Microsoft `Semantic Kernel` and includes a collection of links.
 
+#### Projects in the solution
+
+Prerequisite: the examples use the [OpenAI platform](https://platform.openai.com/api-keys), assuming an environment variable (OpenAI__ApiKey) is present with an API-Key
+
+- ConsoleAppSK
+  - KernelInvokePrompt.cs: Simple example of using the `Kernel` by calling the InvokePrompt method
+  - ChatCompletion.cs: Using the `IChatCompletionService` with a preserved `ChatHistory`
+
 #### Resources
 
 - OpeanAI
