@@ -1,5 +1,4 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
 using Microsoft.SemanticKernel;
 using Shared;
 
@@ -7,7 +6,7 @@ namespace ConsoleAppSK.Examples;
 
 public static class KernelInvokePrompt
 {
-    public static async Task Run(string prompt, bool enableLogging = false)
+    public static async Task Run(string prompt)
     {
         IKernelBuilder builder      = Kernel.CreateBuilder();
         IServiceCollection services = builder.Services;
@@ -19,15 +18,14 @@ public static class KernelInvokePrompt
         {
             services.AddOpenAIChatCompletion(OpenAIConfig.Models.GPT_3_5_Turbo, OpenAIConfig.ApiKey);
 
-            if (enableLogging)
-            {
-                services.AddLogging(loggingBuilder => loggingBuilder.AddConsole().SetMinimumLevel(LogLevel.Trace));
-            }
+            // You can add logging as well
+            // services.AddLogging(loggingBuilder => loggingBuilder.AddConsole().SetMinimumLevel(LogLevel.Trace));
         }
 
         Kernel kernel = builder.Build();
 
-        await foreach (StreamingKernelContent content in kernel.InvokePromptStreamingAsync(prompt))
+        // await foreach (StreamingKernelContent content in kernel.InvokePromptStreamingAsync(prompt))
+        await foreach (string content in kernel.InvokePromptStreamingAsync<string>(prompt))
         {
             Console.Write(content);
         }
