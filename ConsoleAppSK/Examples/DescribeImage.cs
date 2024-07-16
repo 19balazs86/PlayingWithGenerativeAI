@@ -20,6 +20,7 @@ public static class DescribeImage
         {
             new TextContent("Could you briefly describe this image?"),
             new ImageContent(_imageUrl)
+            //new ImageContent(File.ReadAllBytes(@"c:\....jpg"), "image/jpeg")
         };
 
         chatHistory.AddUserMessage(contentItemCollection);
