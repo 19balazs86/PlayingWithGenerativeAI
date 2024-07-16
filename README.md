@@ -3,14 +3,15 @@ This repository contains projects demonstrating the use of AI with Microsoft `Se
 
 #### Projects in the solution
 
-Prerequisite: the examples use the [OpenAI platform](https://platform.openai.com/api-keys), assuming an environment variable (OpenAI__ApiKey) is present with an API-Key
+Prerequisite: the examples use the [OpenAI platform](https://platform.openai.com/api-keys). Assuming an environment variable (OpenAI__ApiKey) is present
 
-- ConsoleAppSK
-  - KernelInvokePrompt.cs: Simple example of using the `Kernel` by calling the InvokePrompt method
-  - ChatCompletion.cs: Using the `IChatCompletionService` with a preserved `ChatHistory`
-- WebApiSK
-  - Endpoint: '/weather-forecast': Simple example of using the `Kernel` by calling the InvokePrompt method to describe the weather at x°C
-  - Endpoint: '/current-time': `IChatCompletionService` getting the current time from a plug-in
+- **ConsoleAppSK**
+  - `KernelInvokePrompt.cs`: Simple example of using the *Kernel* by calling the *InvokePrompt* method
+  - `ChatCompletion.cs`: Using the *IChatCompletionService* with a preserved *ChatHistory*
+  - `DescribeImage.cs`: Using the *IChatCompletionService* to describe an image with *ImageContent(URL)*
+- **WebApiSK**
+  - Endpoint `/weather-forecast`: Simple example of using the *Kernel* by calling the InvokePrompt method to describe the weather at x°C
+  - Endpoint `/current-time`: *IChatCompletionService* getting the current time from a plug-in
 
 #### Resources
 

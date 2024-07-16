@@ -9,5 +9,7 @@ public static class Program
         await KernelInvokePrompt.Run("Who are you?");
 
         await ChatCompletion.Run();
+
+        // await DescribeImage.Run();
     }
 }
