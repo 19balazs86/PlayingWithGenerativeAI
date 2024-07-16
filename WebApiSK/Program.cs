@@ -14,6 +14,9 @@ public static class Program
         // Add services to the container
         {
             services.addSemanticKernel();
+
+            // ChatCompletion uses HttpClient, we can define the default one with ResilienceHandler
+            // services.ConfigureHttpClientDefaults(clientBuilder => clientBuilder.AddStandardResilienceHandler());
         }
 
         WebApplication app = builder.Build();
