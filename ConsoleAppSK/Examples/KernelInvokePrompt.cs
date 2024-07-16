@@ -41,6 +41,7 @@ public static class KernelInvokePrompt
         // --> Invoke #3
         Console.WriteLine("\n--- Summarize ---");
 
+        // KernelFunction summarizeFunction = KernelFunctionFactory.CreateFromPrompt(_promptWithArgument);
         KernelFunction summarizeFunction = kernel.CreateFunctionFromPrompt(_promptWithArgument);
 
         Console.WriteLine(await kernel.InvokeAsync(summarizeFunction, kernelArguments));
