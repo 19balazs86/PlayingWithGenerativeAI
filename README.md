@@ -6,7 +6,7 @@ This repository contains projects demonstrating the use of AI with Microsoft `Se
 Prerequisite: the examples use the [OpenAI platform](https://platform.openai.com/api-keys). Assuming an environment variable (OpenAI__ApiKey) is present
 
 - **ConsoleAppSK**
-  - `KernelInvokePrompt.cs`: Simple example of using the *Kernel* by calling the *InvokePrompt* method
+  - `KernelInvokePrompt.cs`: Few examples of using the *Kernel* by calling the *InvokePrompt* method
   - `ChatCompletion.cs`: Using the *IChatCompletionService* with a preserved *ChatHistory*
   - `DescribeImage.cs`: Using the *IChatCompletionService* to describe an image with *ImageContent(URL)*
 - **WebApiSK**
