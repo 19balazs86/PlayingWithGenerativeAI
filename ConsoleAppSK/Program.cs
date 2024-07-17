@@ -13,5 +13,7 @@ public static class Program
         // await DescribeImage.Run();
 
         // await TextToImage.Run();
+
+        // await EmbeddingSimilarity.Run();
     }
 }

@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <PackageVersion Include="Microsoft.SemanticKernel" Version="1.15.1" />
+    <PackageVersion Include="System.Numerics.Tensors" Version="8.0.0" />
   </ItemGroup>
 
 </Project>
