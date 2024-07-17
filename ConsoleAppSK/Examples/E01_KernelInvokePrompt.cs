@@ -4,7 +4,7 @@ using Shared;
 
 namespace ConsoleAppSK.Examples;
 
-public static class KernelInvokePrompt
+public static class E01_KernelInvokePrompt
 {
     public static async Task Run(string prompt)
     {

@@ -4,7 +4,7 @@ using Shared;
 
 namespace ConsoleAppSK.Examples;
 
-public static class ChatCompletion
+public static class E02_ChatCompletion
 {
     public static async Task Run()
     {

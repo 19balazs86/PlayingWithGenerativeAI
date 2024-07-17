@@ -4,7 +4,7 @@ using Shared;
 
 namespace ConsoleAppSK.Examples;
 
-public static class DescribeImage
+public static class E03_DescribeImage
 {
     private static readonly Uri _imageUrl = new Uri("https://bestfriends.org/sites/default/files/resource_article_images/Introduce-cat-dog-Cappuccino-6650sak%255B1%255D.jpg");
 

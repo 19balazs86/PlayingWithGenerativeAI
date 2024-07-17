@@ -4,7 +4,7 @@ using Shared;
 
 namespace ConsoleAppSK.Examples;
 
-public static class TextToImage
+public static class E04_TextToImage
 {
     private const string _prompt = "A dog flying over the a house";
 

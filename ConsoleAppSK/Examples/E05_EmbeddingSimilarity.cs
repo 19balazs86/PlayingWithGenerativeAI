@@ -5,7 +5,7 @@ using System.Numerics.Tensors;
 
 namespace ConsoleAppSK.Examples;
 
-public static class EmbeddingSimilarity
+public static class E05_EmbeddingSimilarity
 {
     // In a real-case scenario, you can generate embedding for a user's question and query the similarity with stored embedded vectors in Redis or PostgresDB
     public static async Task Run()
