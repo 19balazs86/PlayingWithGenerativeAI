@@ -42,3 +42,5 @@ Prerequisite: the examples use the [OpenAI platform](https://platform.openai.com
 - [Pricing](https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service)
 - [Documentation](https://learn.microsoft.com/en-us/azure/ai-services/openai/overview)
 - [Azure AI Search](https://learn.microsoft.com/en-us/azure/search/search-what-is-azure-search)
+- Miscellaneous
+  - [Generate images using Azure OpenAI Service with Azure.AI.OpenAI package](https://code-maze.com/aspnetcore-generate-images-using-openai) 📓Code-Maze
