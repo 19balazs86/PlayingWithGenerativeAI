@@ -23,7 +23,7 @@ Prerequisite: the examples use the [OpenAI platform](https://platform.openai.com
 #### OpeanAI
 
 - [Playground](https://platform.openai.com/playground) | [Pricing](https://openai.com/api/pricing)
-- [OpenAI .NET API library](https://github.com/openai/openai-dotnet) 👤
+- [OpenAI .NET API library](https://github.com/openai/openai-dotnet), [examples](https://github.com/openai/openai-dotnet/tree/main/examples) 👤
 - [Documentation](https://platform.openai.com/docs/overview) | [API reference](https://platform.openai.com/docs/api-reference/introduction)
 - Miscellaneous
   - [Introducint the new library](https://youtu.be/BKeaojX45w0): *ChatClient, ImageClient, AudioClient* - 📽️16 min - Bald.Bearded.Builder
@@ -32,15 +32,14 @@ Prerequisite: the examples use the [OpenAI platform](https://platform.openai.com
 
 - [Documentation](https://learn.microsoft.com/en-us/semantic-kernel/overview) | [API browser](https://learn.microsoft.com/en-us/dotnet/api/?view=semantic-kernel-dotnet) | [Namespace](https://learn.microsoft.com/en-us/dotnet/api/microsoft.semantickernel)
 - [AI for .NET developers](https://learn.microsoft.com/en-us/dotnet/ai) 📚*Microsoft-learn*
-- [Source code](https://github.com/microsoft/semantic-kernel) 👤
+- [Source code](https://github.com/microsoft/semantic-kernel), [examples](https://github.com/microsoft/semantic-kernel/tree/main/dotnet) 👤
 - Miscellaneous
   - [Infusing applications with AI](https://youtu.be/jrNfKeGSuCg) 📽️*46 min - Microsoft Developer | MS Build 2024*
 
 #### Azure OpenAI Service
 
-- [Azure AI Studio](https://ai.azure.com)
-- [Pricing](https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service)
+- [Azure AI Studio](https://ai.azure.com) | [Pricing](https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service)
 - [Documentation](https://learn.microsoft.com/en-us/azure/ai-services/openai/overview)
 - [Azure AI Search](https://learn.microsoft.com/en-us/azure/search/search-what-is-azure-search)
 - Miscellaneous
-  - [Generate images using Azure OpenAI Service with Azure.AI.OpenAI package](https://code-maze.com/aspnetcore-generate-images-using-openai) 📓Code-Maze
+  - [Generate images using Azure OpenAI Service](https://code-maze.com/aspnetcore-generate-images-using-openai) (with Azure.AI.OpenAI package) 📓Code-Maze
