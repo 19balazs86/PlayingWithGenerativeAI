@@ -1,0 +1,31 @@
+﻿using Microsoft.SemanticKernel;
+using Microsoft.SemanticKernel.TextToImage;
+using Shared;
+
+namespace ConsoleAppSK.Examples;
+
+public static class TextToImage
+{
+    private const string _prompt = "A dog flying over the a house";
+
+    public static async Task Run()
+    {
+        // Once the APIs for this feature are stable, the experimental attribute will be removed
+
+#pragma warning disable SKEXP0010 // Type is for evaluation purposes only and is subject to change or removal in future updates. Suppress this diagnostic to proceed.
+        Kernel kernel = Kernel.CreateBuilder()
+            .AddOpenAITextToImage(OpenAIConfig.ApiKey)
+            .Build();
+#pragma warning restore SKEXP0010 // Type is for evaluation purposes only and is subject to change or removal in future updates. Suppress this diagnostic to proceed.
+
+#pragma warning disable SKEXP0001 // Type is for evaluation purposes only and is subject to change or removal in future updates. Suppress this diagnostic to proceed.
+        var textToImageService = kernel.GetRequiredService<ITextToImageService>();
+
+        string imageUrl = await textToImageService.GenerateImageAsync(_prompt, 1024, 1024);
+#pragma warning restore SKEXP0001 // Type is for evaluation purposes only and is subject to change or removal in future updates. Suppress this diagnostic to proceed.
+
+        Console.WriteLine(imageUrl);
+
+        Console.WriteLine("\n--- End of TextToImage ---");
+    }
+}

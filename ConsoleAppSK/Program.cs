@@ -11,5 +11,7 @@ public static class Program
         await ChatCompletion.Run();
 
         // await DescribeImage.Run();
+
+        // await TextToImage.Run();
     }
 }
