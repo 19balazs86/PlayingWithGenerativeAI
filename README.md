@@ -22,7 +22,7 @@ Prerequisite: the examples use the [OpenAI platform](https://platform.openai.com
 
 #### OpeanAI
 
-- [Playground](https://platform.openai.com/playground) | [Pricing](https://openai.com/api/pricing)
+- [Playground](https://platform.openai.com/playground) | [Pricing](https://openai.com/api/pricing) | [Tokenizer](https://platform.openai.com/tokenizer) | [Models](https://platform.openai.com/docs/models/overview)
 - [OpenAI .NET API library](https://github.com/openai/openai-dotnet), [examples](https://github.com/openai/openai-dotnet/tree/main/examples) 👤
 - [Documentation](https://platform.openai.com/docs/overview) | [API reference](https://platform.openai.com/docs/api-reference/introduction)
 - Miscellaneous
@@ -38,8 +38,7 @@ Prerequisite: the examples use the [OpenAI platform](https://platform.openai.com
 
 #### Azure OpenAI Service
 
-- [Azure AI Studio](https://ai.azure.com) | [Pricing](https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service)
-- [Documentation](https://learn.microsoft.com/en-us/azure/ai-services/openai/overview)
+- [Azure AI Studio](https://ai.azure.com) | [Pricing](https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service) | [Documentation](https://learn.microsoft.com/en-us/azure/ai-services/openai/overview)
 - [Azure AI Search](https://learn.microsoft.com/en-us/azure/search/search-what-is-azure-search)
 - Miscellaneous
   - [Generate images using Azure OpenAI Service](https://code-maze.com/aspnetcore-generate-images-using-openai) (with Azure.AI.OpenAI package) 📓Code-Maze
