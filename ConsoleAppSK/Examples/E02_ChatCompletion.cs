@@ -11,7 +11,7 @@ public static class E02_ChatCompletion
         ConsoleColor defaultConsoleColor = Console.ForegroundColor;
 
         Kernel kernel = Kernel.CreateBuilder()
-            .AddOpenAIChatCompletion(OpenAIConfig.Models.GPT_3_5_Turbo, OpenAIConfig.ApiKey)
+            .AddOpenAIChatCompletion(OpenAIConfig.Models.GPT_4o_Mini, OpenAIConfig.ApiKey)
             .Build();
 
         string systemMessage = getSystemMessage();
@@ -42,7 +42,7 @@ public static class E02_ChatCompletion
 
                 assistantMessage += content.Content;
 
-                await Task.Delay(100);
+                await Task.Delay(50);
             }
 
             Console.WriteLine();
