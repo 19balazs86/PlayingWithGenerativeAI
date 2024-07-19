@@ -30,11 +30,11 @@ public static class E02_ChatCompletion
 
             string assistantMessage = string.Empty;
 
-            Console.Out.WriteAI("AI: ");
+            Console.Out.AI().Write("AI: ");
 
             await foreach (var content in chatCompletionService.GetStreamingChatMessageContentsAsync(chatHistory))
             {
-                Console.Out.WriteAI(content.Content);
+                Console.Out.AI().Write(content.Content);
 
                 assistantMessage += content.Content;
 
@@ -46,16 +46,15 @@ public static class E02_ChatCompletion
             chatHistory.AddAssistantMessage(assistantMessage);
         }
 
-        Console.ResetColor();
-        Console.WriteLine("\n--- End of ChatCompletion ---");
+        Console.Out.ResetColor().WriteLine("\n--- End of ChatCompletion ---");
     }
 
     private static string getSystemMessage()
     {
-        Console.Out.WriteLineAI("AI: Who am I?");
+        Console.Out.AI().WriteLine("AI: Who am I?");
 
-        Console.ForegroundColor = ConsoleColor.Yellow;
-        Console.Write("You: ");
+        Console.Out.User().Write("You: ");
+
         string? systemMessage = Console.ReadLine();
 
         if (string.IsNullOrWhiteSpace(systemMessage))
@@ -65,16 +64,14 @@ public static class E02_ChatCompletion
             Console.Write(systemMessage);
         }
 
-        Console.Out.WriteLineAI("\nAI: How can I help?");
+        Console.Out.AI().WriteLine("\nAI: How can I help?");
 
         return systemMessage;
     }
 
     private static string getUserPrompt()
     {
-        Console.ForegroundColor = ConsoleColor.Yellow;
-
-        Console.Write("You: ");
+        Console.Out.User().Write("You: ");
 
         string? prompt = Console.ReadLine();
 

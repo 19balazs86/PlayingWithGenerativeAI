@@ -28,11 +28,11 @@ public static class E03_DescribeImage
 
         await foreach (var content in chatCompletionService.GetStreamingChatMessageContentsAsync(chatHistory))
         {
-            Console.Out.WriteAI(content.Content);
+            Console.Out.AI().Write(content.Content);
 
             await Task.Delay(50);
         }
 
-        Console.WriteLine("\n--- End of DescribeImage ---");
+        Console.Out.ResetColor().WriteLine("\n--- End of DescribeImage ---");
     }
 }

@@ -24,29 +24,35 @@ public static class E01_KernelInvokePrompt
         Kernel kernel = builder.Build();
 
         // --> Invoke #1
-        // await foreach (StreamingKernelContent content in kernel.InvokePromptStreamingAsync(prompt))
-        await foreach (string content in kernel.InvokePromptStreamingAsync<string>(prompt))
         {
-            Console.Out.WriteAI(content);
+            // await foreach (StreamingKernelContent content in kernel.InvokePromptStreamingAsync(prompt))
+            await foreach (string content in kernel.InvokePromptStreamingAsync<string>(prompt))
+            {
+                Console.Out.AI().Write(content);
+            }
         }
 
         // --> Invoke #2
-        Console.WriteLine("\n--- Summarize---");
+        {
+            Console.Out.ResetColor().WriteLine("\n--- Summarize---");
 
-        var kernelArguments = new KernelArguments { ["input"] = _longTextToSummarize };
-
-        Console.Out.WriteLineAI(await kernel.InvokePromptAsync<string>(_promptWithArgument, kernelArguments));
+            Console.Out.AI().WriteLine(await kernel.InvokePromptAsync<string>(_promptWithArgument, _kernelArguments));
+        }
 
         // --> Invoke #3
-        Console.WriteLine("\n--- Summarize ---");
+        {
+            Console.Out.ResetColor().WriteLine("--- Summarize ---");
 
-        // KernelFunction summarizeFunction = KernelFunctionFactory.CreateFromPrompt(_promptWithArgument);
-        KernelFunction summarizeFunction = kernel.CreateFunctionFromPrompt(_promptWithArgument);
+            // KernelFunction summarizeFunction = KernelFunctionFactory.CreateFromPrompt(_promptWithArgument);
+            KernelFunction summarizeFunction = kernel.CreateFunctionFromPrompt(_promptWithArgument);
 
-        Console.Out.WriteLineAI(await kernel.InvokeAsync<string>(summarizeFunction, kernelArguments));
+            Console.Out.AI().WriteLine(await kernel.InvokeAsync<string>(summarizeFunction, _kernelArguments));
+        }
 
-        Console.WriteLine("--- End of InvokePrompt ---");
+        Console.Out.ResetColor().WriteLine("--- End of InvokePrompt ---");
     }
+
+    private static readonly KernelArguments _kernelArguments = new KernelArguments { ["input"] = _longTextToSummarize };
 
     private const string _promptWithArgument =
         """

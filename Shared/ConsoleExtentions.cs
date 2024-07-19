@@ -2,23 +2,24 @@
 
 public static class ConsoleExtentions
 {
-    private const ConsoleColor _aiColor = ConsoleColor.Green;
-
-    public static void WriteAI(this TextWriter writer, string? message)
+    public static TextWriter AI(this TextWriter writer)
     {
-        Console.ForegroundColor = _aiColor;
+        Console.ForegroundColor = ConsoleColor.Green;
 
-        writer.Write(message);
-
-        Console.ResetColor();
+        return writer;
     }
 
-    public static void WriteLineAI(this TextWriter writer, string? message)
+    public static TextWriter User(this TextWriter writer)
     {
-        Console.ForegroundColor = _aiColor;
+        Console.ForegroundColor = ConsoleColor.Yellow;
 
-        writer.WriteLine(message);
+        return writer;
+    }
 
+    public static TextWriter ResetColor(this TextWriter writer)
+    {
         Console.ResetColor();
+
+        return writer;
     }
 }
