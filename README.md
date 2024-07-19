@@ -20,7 +20,7 @@ Prerequisite: the examples use the [OpenAI platform](https://platform.openai.com
 
 #### `OpenAI - ConsoleOpenAI`
 
-- 
+- [E01_SimpleCompleteChat.cs](ConsoleOpenAI/Examples/E01_CompleteChat.cs): Few simple examples of using the *ChatClient* by calling *CompleteChat* method
 
 
 ## Resources

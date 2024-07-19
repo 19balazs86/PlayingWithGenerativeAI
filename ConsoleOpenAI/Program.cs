@@ -1,9 +1,11 @@
-﻿namespace ConsoleOpenAI;
+﻿using ConsoleOpenAI.Examples;
+
+namespace ConsoleOpenAI;
 
 public static class Program
 {
     public static async Task Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        await E01_CompleteChat.Run();
     }
 }
