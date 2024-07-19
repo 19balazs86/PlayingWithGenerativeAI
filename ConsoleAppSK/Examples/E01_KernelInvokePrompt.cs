@@ -27,7 +27,7 @@ public static class E01_KernelInvokePrompt
         // await foreach (StreamingKernelContent content in kernel.InvokePromptStreamingAsync(prompt))
         await foreach (string content in kernel.InvokePromptStreamingAsync<string>(prompt))
         {
-            Console.Write(content);
+            Console.Out.WriteAI(content);
         }
 
         // --> Invoke #2
@@ -35,7 +35,7 @@ public static class E01_KernelInvokePrompt
 
         var kernelArguments = new KernelArguments { ["input"] = _longTextToSummarize };
 
-        Console.WriteLine(await kernel.InvokePromptAsync<string>(_promptWithArgument, kernelArguments));
+        Console.Out.WriteLineAI(await kernel.InvokePromptAsync<string>(_promptWithArgument, kernelArguments));
 
         // --> Invoke #3
         Console.WriteLine("\n--- Summarize ---");
@@ -43,10 +43,9 @@ public static class E01_KernelInvokePrompt
         // KernelFunction summarizeFunction = KernelFunctionFactory.CreateFromPrompt(_promptWithArgument);
         KernelFunction summarizeFunction = kernel.CreateFunctionFromPrompt(_promptWithArgument);
 
-        Console.WriteLine(await kernel.InvokeAsync(summarizeFunction, kernelArguments));
+        Console.Out.WriteLineAI(await kernel.InvokeAsync<string>(summarizeFunction, kernelArguments));
 
-        // ---
-        Console.WriteLine("\n--- End of InvokePrompt ---");
+        Console.WriteLine("--- End of InvokePrompt ---");
     }
 
     private const string _promptWithArgument =

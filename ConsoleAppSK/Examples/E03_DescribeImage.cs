@@ -28,9 +28,9 @@ public static class E03_DescribeImage
 
         await foreach (var content in chatCompletionService.GetStreamingChatMessageContentsAsync(chatHistory))
         {
-            Console.Write(content.Content);
+            Console.Out.WriteAI(content.Content);
 
-            await Task.Delay(100);
+            await Task.Delay(50);
         }
 
         Console.WriteLine("\n--- End of DescribeImage ---");

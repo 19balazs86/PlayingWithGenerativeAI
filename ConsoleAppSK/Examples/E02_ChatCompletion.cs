@@ -30,12 +30,11 @@ public static class E02_ChatCompletion
 
             string assistantMessage = string.Empty;
 
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.Write("AI: ");
+            Console.Out.WriteAI("AI: ");
 
             await foreach (var content in chatCompletionService.GetStreamingChatMessageContentsAsync(chatHistory))
             {
-                Console.Write(content.Content);
+                Console.Out.WriteAI(content.Content);
 
                 assistantMessage += content.Content;
 
@@ -53,8 +52,7 @@ public static class E02_ChatCompletion
 
     private static string getSystemMessage()
     {
-        Console.ForegroundColor = ConsoleColor.Green;
-        Console.WriteLine("AI: Who am I?");
+        Console.Out.WriteLineAI("AI: Who am I?");
 
         Console.ForegroundColor = ConsoleColor.Yellow;
         Console.Write("You: ");
@@ -67,8 +65,7 @@ public static class E02_ChatCompletion
             Console.Write(systemMessage);
         }
 
-        Console.ForegroundColor = ConsoleColor.Green;
-        Console.WriteLine("\nAI: How can I help?");
+        Console.Out.WriteLineAI("\nAI: How can I help?");
 
         return systemMessage;
     }
