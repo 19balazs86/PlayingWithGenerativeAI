@@ -1,6 +1,5 @@
 ﻿using Microsoft.SemanticKernel;
 using Microsoft.SemanticKernel.TextToImage;
-using Shared;
 
 namespace ConsoleAppSK.Examples;
 

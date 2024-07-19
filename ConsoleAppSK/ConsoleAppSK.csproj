@@ -13,4 +13,8 @@
     <ProjectReference Include="..\Shared\Shared.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Using Include="Shared" />
+  </ItemGroup>
+
 </Project>

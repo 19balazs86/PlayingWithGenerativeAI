@@ -1,6 +1,5 @@
 ﻿using Microsoft.SemanticKernel;
 using Microsoft.SemanticKernel.Embeddings;
-using Shared;
 using System.Numerics.Tensors;
 
 namespace ConsoleAppSK.Examples;

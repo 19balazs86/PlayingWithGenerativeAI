@@ -1,6 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.SemanticKernel;
-using Shared;
 
 namespace ConsoleAppSK.Examples;
 
