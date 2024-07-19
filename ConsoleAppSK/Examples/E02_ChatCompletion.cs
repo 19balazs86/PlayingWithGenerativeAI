@@ -8,8 +8,6 @@ public static class E02_ChatCompletion
 {
     public static async Task Run()
     {
-        ConsoleColor defaultConsoleColor = Console.ForegroundColor;
-
         Kernel kernel = Kernel.CreateBuilder()
             .AddOpenAIChatCompletion(OpenAIConfig.Models.GPT_4o_Mini, OpenAIConfig.ApiKey)
             .Build();
@@ -50,7 +48,7 @@ public static class E02_ChatCompletion
             chatHistory.AddAssistantMessage(assistantMessage);
         }
 
-        Console.ForegroundColor = defaultConsoleColor;
+        Console.ResetColor();
         Console.WriteLine("\n--- End of ChatCompletion ---");
     }
 
