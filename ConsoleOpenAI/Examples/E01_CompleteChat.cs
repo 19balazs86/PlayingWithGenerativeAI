@@ -2,6 +2,8 @@
 using System.ClientModel;
 
 namespace ConsoleOpenAI.Examples;
+
+// Examples: https://github.com/openai/openai-dotnet/tree/main/examples/Chat
 public static class E01_CompleteChat
 {
     public static async Task Run()
@@ -34,6 +36,6 @@ public static class E01_CompleteChat
             }
         }
 
-        Console.Out.ResetColor().WriteLine("\n--- End of E01_SimpleCompleteChat ---");
+        Console.Out.ResetColor().WriteLine("\n--- End of E01_CompleteChat ---");
     }
 }

@@ -5,6 +5,7 @@ using System.ComponentModel;
 
 namespace WebApiSK.Endpoints;
 
+// Plugin examples: https://github.com/microsoft/semantic-kernel/blob/main/dotnet/samples/GettingStarted/Step2_Add_Plugins.cs
 public static class CurrentTimeEndpoints
 {
     private static readonly OpenAIPromptExecutionSettings _promptExecutionSettings = new()

@@ -3,6 +3,7 @@ using Microsoft.SemanticKernel;
 
 namespace ConsoleAppSK.Examples;
 
+// Examples: https://github.com/microsoft/semantic-kernel/blob/main/dotnet/samples/GettingStarted/Step1_Create_Kernel.cs
 public static class E01_KernelInvokePrompt
 {
     public static async Task Run(string prompt)
