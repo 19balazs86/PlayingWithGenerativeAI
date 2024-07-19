@@ -23,7 +23,7 @@ public static class E01_KernelInvokePrompt
 
         Kernel kernel = builder.Build();
 
-        // --> Invoke #1
+        // --> #1 InvokePrompt Streaming
         {
             // await foreach (StreamingKernelContent content in kernel.InvokePromptStreamingAsync(prompt))
             await foreach (string content in kernel.InvokePromptStreamingAsync<string>(prompt))
@@ -32,14 +32,14 @@ public static class E01_KernelInvokePrompt
             }
         }
 
-        // --> Invoke #2
+        // --> #2 InvokePrompt
         {
             Console.Out.ResetColor().WriteLine("\n--- Summarize---");
 
             Console.Out.AI().WriteLine(await kernel.InvokePromptAsync<string>(_promptWithArgument, _kernelArguments));
         }
 
-        // --> Invoke #3
+        // --> #3 Invoke Prompt-Function
         {
             Console.Out.ResetColor().WriteLine("--- Summarize ---");
 

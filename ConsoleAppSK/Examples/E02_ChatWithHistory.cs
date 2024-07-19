@@ -3,7 +3,7 @@ using Microsoft.SemanticKernel.ChatCompletion;
 
 namespace ConsoleAppSK.Examples;
 
-public static class E02_ChatCompletion
+public static class E02_ChatWithHistory
 {
     public static async Task Run()
     {

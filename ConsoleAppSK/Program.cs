@@ -8,7 +8,7 @@ public static class Program
     {
         await E01_KernelInvokePrompt.Run("Who are you?");
 
-        await E02_ChatCompletion.Run();
+        await E02_ChatWithHistory.Run();
 
         //await E03_DescribeImage.Run();
 
