@@ -5,7 +5,7 @@ This repository contains projects demonstrating the use of AI with Microsoft `Se
 
 Prerequisite: the examples use the [OpenAI platform](https://platform.openai.com/api-keys). Assuming an environment variable (OpenAI__ApiKey) is present
 
-#### `ConsoleAppSK`
+#### `SemanticKernel - ConsoleAppSK`
 
 - [E01_KernelInvokePrompt.cs](ConsoleAppSK/Examples/E01_KernelInvokePrompt.cs): Few examples of using the *Kernel* by calling the *InvokePrompt* method
 - [E02_ChatCompletion.cs](ConsoleAppSK/Examples/E02_ChatCompletion.cs): Using the *IChatCompletionService* with a preserved *ChatHistory*
@@ -13,10 +13,15 @@ Prerequisite: the examples use the [OpenAI platform](https://platform.openai.com
 - [E04_TextToImage.cs](ConsoleAppSK/Examples/E04_TextToImage.cs): Using the *ITextToImageService* to generate an image based on the given prompt
 - [E05_EmbeddingSimilarity.cs](ConsoleAppSK/Examples/E05_EmbeddingSimilarity.cs): Use the *ITextEmbeddingGenerationService* to generate embeddings for texts and the *TensorPrimitives.CosineSimilarity* to compare the embedded vectors
 
-#### `WebApiSK`
+#### `SemanticKernel - WebApiSK`
 
 - [Endpoint /weather-forecast](WebApiSK/Endpoints/WeatherForecastEndpoints.cs): Simple example of using the *Kernel* by calling the InvokePrompt method to describe the weather at x°C
 - [Endpoint /current-time](WebApiSK/Endpoints/CurrentTimeEndpoints.cs): *IChatCompletionService* getting the current time from a plug-in
+
+#### `OpenAI - ConsoleOpenAI`
+
+- 
+
 
 ## Resources
 
