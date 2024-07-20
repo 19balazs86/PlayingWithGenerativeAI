@@ -8,6 +8,7 @@ public static class OpenAIConfig
         public const string GPT_4o            = "gpt-4o";
         public const string GPT_4o_Mini       = "gpt-4o-mini";
         public const string Embedding_3_Small = "text-embedding-3-small";
+        public const string Image_Dall_E_3 = "dall-e-3";
     }
 
     // Create the API key: https://platform.openai.com

@@ -10,7 +10,7 @@ Prerequisite: the examples use the [OpenAI platform](https://platform.openai.com
 - [E01_KernelInvokePrompt.cs](ConsoleAppSK/Examples/E01_KernelInvokePrompt.cs): Few examples of using the *Kernel* by calling the *InvokePrompt* method
 - [E02_ChatWithHistory.cs](ConsoleAppSK/Examples/E02_ChatWithHistory.cs): Using the *IChatCompletionService* with a preserved *ChatHistory*
 - [E03_DescribeImage.cs](ConsoleAppSK/Examples/E03_DescribeImage.cs): Using the *IChatCompletionService* to describe an image with *ImageContent(URL)*
-- [E04_TextToImage.cs](ConsoleAppSK/Examples/E04_TextToImage.cs): Using the *ITextToImageService* to generate an image based on the given prompt
+- [E04_TextToImage.cs](ConsoleAppSK/Examples/E04_TextToImage.cs): Using the *ITextToImageService* to generate an image
 - [E05_EmbeddingSimilarity.cs](ConsoleAppSK/Examples/E05_EmbeddingSimilarity.cs): Use the *ITextEmbeddingGenerationService* to generate embeddings for texts and the *TensorPrimitives.CosineSimilarity* to compare the embedded vectors
 
 #### `SemanticKernel - WebApiSK`
@@ -22,7 +22,8 @@ Prerequisite: the examples use the [OpenAI platform](https://platform.openai.com
 
 - [E01_CompleteChat.cs](ConsoleOpenAI/Examples/E01_CompleteChat.cs): Few simple examples of using the *ChatClient* by calling *CompleteChat* method
 - [E02_ChatWithHistory.cs](ConsoleOpenAI/Examples/E02_ChatWithHistory.cs): Using the *ChatClient* with a preserved history
-
+- [E03_DescribeImage.cs](ConsoleOpenAI/Examples/E03_DescribeImage.cs): Using the *ChatClient* to describe an image
+- [E04_TextToImage.cs](ConsoleOpenAI/Examples/E04_TextToImage.cs): Using the *ImageClient* to generate an image. Other examples in a comment.
 
 ## Resources
 
@@ -31,8 +32,6 @@ Prerequisite: the examples use the [OpenAI platform](https://platform.openai.com
 - [Playground](https://platform.openai.com/playground) | [Pricing](https://openai.com/api/pricing) | [Tokenizer](https://platform.openai.com/tokenizer) | [Models](https://platform.openai.com/docs/models/overview)
 - [OpenAI .NET API library](https://github.com/openai/openai-dotnet), [examples](https://github.com/openai/openai-dotnet/tree/main/examples) 👤
 - [Documentation](https://platform.openai.com/docs/overview) | [API reference](https://platform.openai.com/docs/api-reference/introduction)
-- Miscellaneous
-  - [Introducint the new library](https://youtu.be/BKeaojX45w0): *ChatClient, ImageClient, AudioClient* - 📽️16 min - Bald.Bearded.Builder
 
 #### Semantic Kernel SDK
 
