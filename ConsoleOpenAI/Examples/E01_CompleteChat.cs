@@ -9,7 +9,7 @@ public static class E01_CompleteChat
 {
     public static async Task Run(OpenAIClient openAIClient)
     {
-        string prompt = string.Empty;
+        string prompt;
 
         // var chatClient = new ChatClient(OpenAIConfig.Models.GPT_4o_Mini, OpenAIConfig.ApiKey);
 

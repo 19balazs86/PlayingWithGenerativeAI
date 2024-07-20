@@ -16,4 +16,10 @@
     <Using Include="Shared" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Assets\smile_computer_monitor.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

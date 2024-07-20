@@ -13,5 +13,7 @@ public static class Program
         await E01_CompleteChat.Run(openAIClient);
 
         await E02_ChatWithHistory.Run(openAIClient);
+
+        // await E03_DescribeImage.Run(openAIClient);
     }
 }
