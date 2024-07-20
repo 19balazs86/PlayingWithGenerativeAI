@@ -17,5 +17,7 @@ public static class Program
         // await E03_DescribeImage.Run(openAIClient);
 
         // await E04_TextToImage.Run(openAIClient);
+
+        // await E05_EmbeddingSimilarity.Run(openAIClient);
     }
 }

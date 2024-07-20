@@ -24,6 +24,7 @@ Prerequisite: the examples use the [OpenAI platform](https://platform.openai.com
 - [E02_ChatWithHistory.cs](ConsoleOpenAI/Examples/E02_ChatWithHistory.cs): Using the *ChatClient* with a preserved history
 - [E03_DescribeImage.cs](ConsoleOpenAI/Examples/E03_DescribeImage.cs): Using the *ChatClient* to describe an image
 - [E04_TextToImage.cs](ConsoleOpenAI/Examples/E04_TextToImage.cs): Using the *ImageClient* to generate an image. Other examples in a comment.
+- [E05_EmbeddingSimilarity.cs](ConsoleOpenAI/Examples/E05_EmbeddingSimilarity.cs): Use the *EmbeddingClient* to generate embeddings for texts and the *TensorPrimitives.CosineSimilarity* to compare the embedded vectors
 
 ## Resources
 
