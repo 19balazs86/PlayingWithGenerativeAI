@@ -4,12 +4,6 @@
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
   </PropertyGroup>
 
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-  </PropertyGroup>
-
   <ItemGroup>
     <PackageVersion Include="Microsoft.SemanticKernel" Version="1.16.0" />
     <PackageVersion Include="System.Numerics.Tensors" Version="8.0.0" />

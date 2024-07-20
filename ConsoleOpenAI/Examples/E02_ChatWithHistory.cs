@@ -46,7 +46,7 @@ public static class E02_ChatWithHistory
             chatHistory.Add(ChatMessage.CreateAssistantMessage(assistantMessage));
         }
 
-        Console.Out.ResetColor().WriteLine("--- End of ChatCompletion ---");
+        Console.Out.ResetColor().WriteLine("--- End of E02_ChatWithHistory ---");
     }
 
     private static SystemChatMessage getSystemMessage()

@@ -19,7 +19,7 @@ public static class E03_DescribeImage
 
         await updates.writeStreamingContent();
 
-        Console.Out.ResetColor().WriteLine("\n--- End of DescribeImage ---");
+        Console.Out.ResetColor().WriteLine("\n--- End of E03_DescribeImage ---");
     }
 
     private static UserChatMessage createUserMessage()

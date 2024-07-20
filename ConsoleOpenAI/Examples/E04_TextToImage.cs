@@ -28,6 +28,6 @@ public static class E04_TextToImage
 
         Console.WriteLine($"GeneratedImage: {generatedImage.ImageUri}");
 
-        Console.WriteLine("--- End of TextToImage ---");
+        Console.WriteLine("--- End of E04_TextToImage ---");
     }
 }

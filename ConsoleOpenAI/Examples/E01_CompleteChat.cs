@@ -45,7 +45,7 @@ public static class E01_CompleteChat
 
         Console.WriteLine();
 
-        // --> #2 CompleteChat with MaxTokens
+        // --> #3 CompleteChat with MaxTokens
         // You can see example of FinishReason: https://github.com/openai/openai-dotnet/blob/main/examples/Chat/Example04_FunctionCallingStreaming.cs
         {
             Console.Out.User().WriteLine(prompt = "You: Tell me a LONG story about a dog.");
