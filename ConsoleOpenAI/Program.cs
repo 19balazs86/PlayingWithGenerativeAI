@@ -11,5 +11,7 @@ public static class Program
         var openAIClient = new OpenAIClient(OpenAIConfig.ApiKey);
 
         await E01_CompleteChat.Run(openAIClient);
+
+        await E02_ChatWithHistory.Run(openAIClient);
     }
 }

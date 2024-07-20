@@ -21,6 +21,7 @@ Prerequisite: the examples use the [OpenAI platform](https://platform.openai.com
 #### `OpenAI - ConsoleOpenAI`
 
 - [E01_CompleteChat.cs](ConsoleOpenAI/Examples/E01_CompleteChat.cs): Few simple examples of using the *ChatClient* by calling *CompleteChat* method
+- [E02_ChatWithHistory.cs](ConsoleOpenAI/Examples/E02_ChatWithHistory.cs): Using the *ChatClient* with a preserved history
 
 
 ## Resources
