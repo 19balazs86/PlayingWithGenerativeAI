@@ -1,5 +1,5 @@
 # Playing with Generative AI
-This repository contains projects demonstrating the use of AI with Microsoft `Semantic Kernel` and includes a collection of links.
+This repository contains projects demonstrating the use of AI with Microsoft `Semantic Kernel SDK` and `OpenAI SDK`.
 
 ## Projects in the solution
 
