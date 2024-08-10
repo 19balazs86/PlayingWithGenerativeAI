@@ -10,10 +10,12 @@ public static class Program
 
         await E02_ChatWithHistory.Run();
 
-        //await E03_DescribeImage.Run();
+        // await E03_DescribeImage.Run();
 
-        //await E04_TextToImage.Run();
+        // await E04_TextToImage.Run();
 
-        //await E05_EmbeddingSimilarity.Run();
+        // await E05_EmbeddingSimilarity.Run();
+
+        // await E06_AudioToText.Run();
     }
 }

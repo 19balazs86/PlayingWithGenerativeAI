@@ -12,6 +12,7 @@ Prerequisite: the examples use the [OpenAI platform](https://platform.openai.com
 - [E03_DescribeImage.cs](ConsoleAppSK/Examples/E03_DescribeImage.cs): Using the *IChatCompletionService* to describe an image with *ImageContent(URL)*
 - [E04_TextToImage.cs](ConsoleAppSK/Examples/E04_TextToImage.cs): Using the *ITextToImageService* to generate an image
 - [E05_EmbeddingSimilarity.cs](ConsoleAppSK/Examples/E05_EmbeddingSimilarity.cs): Use the *ITextEmbeddingGenerationService* to generate embeddings for texts and the *TensorPrimitives.CosineSimilarity* to compare the embedded vectors
+- [E06_AudioToText.cs](ConsoleAppSK/Examples/E06_AudioToText.cs): Using the *IAudioToTextService* to transcribe a given audio
 
 #### `SemanticKernel - WebApiSK`
 
@@ -25,6 +26,7 @@ Prerequisite: the examples use the [OpenAI platform](https://platform.openai.com
 - [E03_DescribeImage.cs](ConsoleOpenAI/Examples/E03_DescribeImage.cs): Using the *ChatClient* to describe an image
 - [E04_TextToImage.cs](ConsoleOpenAI/Examples/E04_TextToImage.cs): Using the *ImageClient* to generate an image. Other examples in a comment.
 - [E05_EmbeddingSimilarity.cs](ConsoleOpenAI/Examples/E05_EmbeddingSimilarity.cs): Use the *EmbeddingClient* to generate embeddings for texts and the *TensorPrimitives.CosineSimilarity* to compare the embedded vectors
+- [E06_AudioToText.cs](ConsoleOpenAI/Examples/E06_AudioToText.cs): Using the *AudioClient* to transcribe a given audio
 
 ## Resources
 
