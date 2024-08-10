@@ -19,5 +19,7 @@ public static class Program
         // await E04_TextToImage.Run(openAIClient);
 
         // await E05_EmbeddingSimilarity.Run(openAIClient);
+
+        // await E06_AudioToText.Run(openAIClient);
     }
 }
