@@ -18,6 +18,8 @@ public static class CurrentTimeEndpoints
         app.MapGet("/current-time", getCurrentTime);
     }
 
+    // You can use the built-in TimePlugin with the Plugins.Core package
+    // Source: https://github.com/microsoft/semantic-kernel/tree/main/dotnet/src/Plugins
     public static IKernelBuilderPlugins AddCurrentTimePlugin(this IKernelBuilderPlugins plugins)
     {
         //IEnumerable<KernelFunction> functions =
