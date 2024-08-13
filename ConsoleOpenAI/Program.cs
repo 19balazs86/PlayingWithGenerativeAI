@@ -21,5 +21,7 @@ public static class Program
         // await E05_EmbeddingSimilarity.Run(openAIClient);
 
         // await E06_AudioToText.Run(openAIClient);
+
+        // await E07_AudiotTextToSpeech.Run(openAIClient);
     }
 }
