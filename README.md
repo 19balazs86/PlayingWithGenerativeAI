@@ -13,6 +13,7 @@ Prerequisite: the examples use the [OpenAI platform](https://platform.openai.com
 - [E04_TextToImage.cs](ConsoleAppSK/Examples/E04_TextToImage.cs): Using the *ITextToImageService* to generate an image
 - [E05_EmbeddingSimilarity.cs](ConsoleAppSK/Examples/E05_EmbeddingSimilarity.cs): Use the *ITextEmbeddingGenerationService* to generate embeddings for texts and the *TensorPrimitives.CosineSimilarity* to compare the embedded vectors
 - [E06_AudioToText.cs](ConsoleAppSK/Examples/E06_AudioToText.cs): Using the *IAudioToTextService* to transcribe a given audio
+- [E07_AudiotTextToSpeech.cs](ConsoleAppSK/Examples/E07_AudiotTextToSpeech.cs): Using the *ITextToAudioService* to get an audio from text
 
 #### `SemanticKernel - WebApiSK`
 

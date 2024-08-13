@@ -17,5 +17,7 @@ public static class Program
         // await E05_EmbeddingSimilarity.Run();
 
         // await E06_AudioToText.Run();
+
+        // await E07_AudiotTextToSpeech.Run();
     }
 }

@@ -9,6 +9,7 @@ public static class OpenAIConfig
         public const string Embedding_3_Small = "text-embedding-3-small";
         public const string Image_Dall_E_3    = "dall-e-3";
         public const string AudioWhisper      = "whisper-1";
+        public const string TextToSpeech      = "tts-1";
     }
 
     // Create the API key: https://platform.openai.com
