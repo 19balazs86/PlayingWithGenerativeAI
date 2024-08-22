@@ -28,7 +28,7 @@ public static class E01_CompleteChat
         {
             Console.Out.User().WriteLine(prompt = "You: Who are you?");
 
-            AsyncResultCollection<StreamingChatCompletionUpdate> updates = chatClient.CompleteChatStreamingAsync(prompt);
+            AsyncCollectionResult<StreamingChatCompletionUpdate> updates = chatClient.CompleteChatStreamingAsync(prompt);
 
             Console.Out.AI().Write($"AI: ");
 

@@ -27,7 +27,7 @@ public static class E02_ChatWithHistory
 
             Console.Out.AI().Write("AI: ");
 
-            AsyncResultCollection<StreamingChatCompletionUpdate> updates = chatClient.CompleteChatStreamingAsync(chatHistory);
+            AsyncCollectionResult<StreamingChatCompletionUpdate> updates = chatClient.CompleteChatStreamingAsync(chatHistory);
 
             await foreach (StreamingChatCompletionUpdate update in updates)
             {

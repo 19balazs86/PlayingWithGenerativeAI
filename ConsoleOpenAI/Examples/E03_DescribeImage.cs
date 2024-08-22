@@ -15,9 +15,9 @@ public static class E03_DescribeImage
 
         Console.Out.AI().Write($"AI image description: ");
 
-        AsyncResultCollection<StreamingChatCompletionUpdate> updates = chatClient.CompleteChatStreamingAsync(userChatMessage);
+        AsyncCollectionResult<StreamingChatCompletionUpdate> updates = chatClient.CompleteChatStreamingAsync(userChatMessage);
 
-        await updates.writeStreamingContent();
+        await updates.writeToConsoleAsync();
 
         Console.Out.ResetColor().WriteLine("\n--- End of E03_DescribeImage ---");
     }
@@ -36,7 +36,7 @@ public static class E03_DescribeImage
         return userChatMessage;
     }
 
-    private static async Task writeStreamingContent(this AsyncResultCollection<StreamingChatCompletionUpdate> updates)
+    private static async Task writeToConsoleAsync(this AsyncCollectionResult<StreamingChatCompletionUpdate> updates)
     {
         await foreach (StreamingChatCompletionUpdate update in updates)
         {
