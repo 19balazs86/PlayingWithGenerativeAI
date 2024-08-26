@@ -10,7 +10,7 @@ public static class E03_DescribeImage
     public static async Task Run()
     {
         Kernel kernel = Kernel.CreateBuilder()
-            .AddOpenAIChatCompletion(OpenAIConfig.Models.GPT_4o, OpenAIConfig.ApiKey)
+            .AddOpenAIChatCompletion(Settings.OpenAI.Models.GPT_4o_Mini, Settings.OpenAI.ApiKey)
             .Build();
 
         var chatHistory = new ChatHistory("You are a friendly AI assistant that responds to questions about images");

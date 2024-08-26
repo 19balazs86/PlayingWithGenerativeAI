@@ -13,7 +13,7 @@ public static class E04_TextToImage
 
 #pragma warning disable SKEXP0010, SKEXP0001 // Type is for evaluation purposes only and is subject to change or removal in future updates.
         Kernel kernel = Kernel.CreateBuilder()
-            .AddOpenAITextToImage(OpenAIConfig.ApiKey)
+            .AddOpenAITextToImage(Settings.OpenAI.ApiKey)
             .Build();
 
         var textToImageService = kernel.GetRequiredService<ITextToImageService>();

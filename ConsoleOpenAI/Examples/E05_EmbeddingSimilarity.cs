@@ -9,7 +9,7 @@ public static class E05_EmbeddingSimilarity
 {
     public static async Task Run(OpenAIClient openAIClient)
     {
-        EmbeddingClient embeddingClient = openAIClient.GetEmbeddingClient(OpenAIConfig.Models.Embedding_3_Small);
+        EmbeddingClient embeddingClient = openAIClient.GetEmbeddingClient(Settings.OpenAI.Models.Embedding_3_Small);
 
         List<string> embeddingInputs = [_question, _hotelDescription, _DogDescription];
 

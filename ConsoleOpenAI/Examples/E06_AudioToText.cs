@@ -10,7 +10,7 @@ public static class E06_AudioToText
 
     public static async Task Run(OpenAIClient openAIClient)
     {
-        AudioClient audioClient  = openAIClient.GetAudioClient(OpenAIConfig.Models.AudioWhisper);
+        AudioClient audioClient  = openAIClient.GetAudioClient(Settings.OpenAI.Models.AudioWhisper);
 
         var options = new AudioTranscriptionOptions
         {

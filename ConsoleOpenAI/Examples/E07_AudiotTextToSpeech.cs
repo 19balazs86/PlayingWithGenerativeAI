@@ -12,7 +12,7 @@ public static class E07_AudiotTextToSpeech
 
     public static async Task Run(OpenAIClient openAIClient)
     {
-        AudioClient audioClient = openAIClient.GetAudioClient(OpenAIConfig.Models.TextToSpeech);
+        AudioClient audioClient = openAIClient.GetAudioClient(Settings.OpenAI.Models.TextToSpeech);
 
         BinaryData speechBinaryData = await audioClient.GenerateSpeechFromTextAsync(_text, GeneratedSpeechVoice.Alloy);
 

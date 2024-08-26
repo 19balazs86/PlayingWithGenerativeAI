@@ -16,7 +16,7 @@ public static class E05_EmbeddingSimilarity
         // List<string> chunks = TextChunker.SplitPlainTextLines(_dogDescription, 50); // You can create small chunks
 
         Kernel kernel = Kernel.CreateBuilder()
-            .AddOpenAITextEmbeddingGeneration(OpenAIConfig.Models.Embedding_3_Small, OpenAIConfig.ApiKey)
+            .AddOpenAITextEmbeddingGeneration(Settings.OpenAI.Models.Embedding_3_Small, Settings.OpenAI.ApiKey)
             .Build();
 
         var textEmbeddingService = kernel.GetRequiredService<ITextEmbeddingGenerationService>();

@@ -13,7 +13,7 @@ public static class E01_CompleteChat
 
         // var chatClient = new ChatClient(OpenAIConfig.Models.GPT_4o_Mini, OpenAIConfig.ApiKey);
 
-        ChatClient chatClient = openAIClient.GetChatClient(OpenAIConfig.Models.GPT_4o_Mini);
+        ChatClient chatClient = openAIClient.GetChatClient(Settings.OpenAI.Models.GPT_4o_Mini);
 
         // --> #1 CompleteChat
         {

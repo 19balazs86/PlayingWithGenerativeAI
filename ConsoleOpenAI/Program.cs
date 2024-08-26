@@ -8,7 +8,7 @@ public static class Program
     public static async Task Main(string[] args)
     {
         // You can use this client to create other clients, such as ChatClient
-        var openAIClient = new OpenAIClient(OpenAIConfig.ApiKey);
+        var openAIClient = new OpenAIClient(Settings.OpenAI.ApiKey);
 
         await E01_CompleteChat.Run(openAIClient);
 

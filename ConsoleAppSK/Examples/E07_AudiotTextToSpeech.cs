@@ -15,7 +15,7 @@ public static class E07_AudiotTextToSpeech
 
 #pragma warning disable SKEXP0010, SKEXP0001 // Type is for evaluation purposes only and is subject to change or removal in future updates.
         Kernel kernel = Kernel.CreateBuilder()
-            .AddOpenAITextToAudio(OpenAIConfig.Models.TextToSpeech, OpenAIConfig.ApiKey)
+            .AddOpenAITextToAudio(Settings.OpenAI.Models.TextToSpeech, Settings.OpenAI.ApiKey)
             .Build();
 
         var textToAudioService = kernel.GetRequiredService<ITextToAudioService>();

@@ -38,7 +38,7 @@ public static class Program
         // You can omit the services.AddKernel(), add Kernel and KernelPluginCollection manually, if you need different life time
 
         // --> Add: OpenAI chat completion
-        services.AddOpenAIChatCompletion(OpenAIConfig.Models.GPT_4o_Mini, OpenAIConfig.ApiKey); // Registered as singleton
+        services.AddOpenAIChatCompletion(Settings.OpenAI.Models.GPT_4o_Mini, Settings.OpenAI.ApiKey); // Registered as singleton
 
         // --> Add: Kernel
         IKernelBuilder kernelBuilder = services.AddKernel(); // Kernel and KernelPluginCollection registered as transient

@@ -16,7 +16,7 @@ public static class E01_KernelInvokePrompt
 
         // Add services to the container
         {
-            services.AddOpenAIChatCompletion(OpenAIConfig.Models.GPT_4o_Mini, OpenAIConfig.ApiKey);
+            services.AddOpenAIChatCompletion(Settings.OpenAI.Models.GPT_4o_Mini, Settings.OpenAI.ApiKey);
 
             // You can add logging as well
             // services.AddLogging(loggingBuilder => loggingBuilder.AddConsole().SetMinimumLevel(LogLevel.Trace));

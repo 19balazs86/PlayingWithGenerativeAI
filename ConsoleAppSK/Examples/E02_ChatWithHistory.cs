@@ -8,7 +8,7 @@ public static class E02_ChatWithHistory
     public static async Task Run()
     {
         Kernel kernel = Kernel.CreateBuilder()
-            .AddOpenAIChatCompletion(OpenAIConfig.Models.GPT_4o_Mini, OpenAIConfig.ApiKey)
+            .AddOpenAIChatCompletion(Settings.OpenAI.Models.GPT_4o_Mini, Settings.OpenAI.ApiKey)
             .Build();
 
         string systemMessage = getSystemMessage();

@@ -12,7 +12,7 @@ public static class E04_TextToImage
 
     public static async Task Run(OpenAIClient openAIClient)
     {
-        ImageClient imageClient = openAIClient.GetImageClient(OpenAIConfig.Models.Image_Dall_E_3);
+        ImageClient imageClient = openAIClient.GetImageClient(Settings.OpenAI.Models.Image_Dall_E_3);
 
         var options = new ImageGenerationOptions
         {

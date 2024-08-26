@@ -10,7 +10,7 @@ public static class E02_ChatWithHistory
     {
         List<ChatMessage> chatHistory = [getSystemMessage()];
 
-        ChatClient chatClient = openAIClient.GetChatClient(OpenAIConfig.Models.GPT_4o_Mini);
+        ChatClient chatClient = openAIClient.GetChatClient(Settings.OpenAI.Models.GPT_4o_Mini);
 
         while (true)
         {

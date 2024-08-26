@@ -9,7 +9,7 @@ public static class E03_DescribeImage
 {
     public static async Task Run(OpenAIClient openAIClient)
     {
-        ChatClient chatClient = openAIClient.GetChatClient(OpenAIConfig.Models.GPT_4o_Mini);
+        ChatClient chatClient = openAIClient.GetChatClient(Settings.OpenAI.Models.GPT_4o_Mini);
 
         var userChatMessage = createUserMessage();
 
