@@ -9,6 +9,7 @@
 
     <PackageVersion Include="OpenAI" Version="2.0.0-beta.8" />
 
+    <PackageVersion Include="Microsoft.Extensions.Configuration.UserSecrets" Version="8.0.0" />
     <PackageVersion Include="System.Numerics.Tensors" Version="8.0.0" />
   </ItemGroup>
 

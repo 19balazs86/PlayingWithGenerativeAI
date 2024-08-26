@@ -3,8 +3,6 @@ This repository contains projects demonstrating the use of AI with Microsoft `Se
 
 ## Projects in the solution
 
-Prerequisite: the examples use the [OpenAI platform](https://platform.openai.com/api-keys). Assuming an environment variable (OpenAI__ApiKey) is present
-
 #### `SemanticKernel - ConsoleAppSK`
 
 - [E01_KernelInvokePrompt.cs](ConsoleAppSK/Examples/E01_KernelInvokePrompt.cs): Few examples of using the *Kernel* by calling the *InvokePrompt* method
@@ -52,3 +50,22 @@ Prerequisite: the examples use the [OpenAI platform](https://platform.openai.com
 - [Azure AI Search](https://learn.microsoft.com/en-us/azure/search/search-what-is-azure-search)
 - Miscellaneous
   - [Generate images using Azure OpenAI Service](https://code-maze.com/aspnetcore-generate-images-using-openai) (with Azure.AI.OpenAI package) 📓Code-Maze
+
+## Prerequisite
+
+- At the moment, you can configure the OpenAI API key since Azure AI is not being used, but the configuration is ready for that
+- The application reads it from **UserSecrets**
+
+```json
+{
+  "SettingsAI": {
+    "OpenAI": {
+      "ApiKey": "..."
+    },
+    "AzureAI": {
+      "Endpoint": "...",
+      "ApiKey": "..."
+    }
+  }
+}
+```

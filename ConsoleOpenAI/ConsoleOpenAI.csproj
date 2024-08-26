@@ -2,11 +2,13 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
+    <UserSecretsId>GenerativeAI</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="OpenAI" />
     <PackageReference Include="System.Numerics.Tensors" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" />
   </ItemGroup>
 
   <ItemGroup>
