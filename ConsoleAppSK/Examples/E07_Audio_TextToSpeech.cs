@@ -3,7 +3,7 @@ using Microsoft.SemanticKernel.TextToAudio;
 
 namespace ConsoleAppSK.Examples;
 
-public static class E07_AudiotTextToSpeech
+public static class E07_Audio_TextToSpeech
 {
     private const string _text = "Overwatering is a common issue for those taking care of houseplants. To prevent it, it is crucial to allow the soil to dry out between waterings. Instead of watering on a fixed schedule, consider using a moisture meter to accurately gauge the soil's wetness. Should the soil retain moisture, it is wise to postpone watering for a couple more days. When in doubt, it is often safer to water sparingly and maintain a less-is-more approach.";
 
@@ -29,6 +29,6 @@ public static class E07_AudiotTextToSpeech
 
         Console.Out.AI().WriteLine("Generated Speech from Text: {0}", _outputFilePath);
 
-        Console.Out.ResetColor().WriteLine("--- End of E07_AudiotTextToSpeech ---");
+        Console.Out.ResetColor().WriteLine("--- End of E07_Audio_TextToSpeech ---");
     }
 }

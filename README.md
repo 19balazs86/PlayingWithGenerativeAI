@@ -11,7 +11,7 @@ This repository contains projects demonstrating the use of AI with Microsoft `Se
 - [E04_TextToImage.cs](ConsoleAppSK/Examples/E04_TextToImage.cs): Using the *ITextToImageService* to generate an image
 - [E05_EmbeddingSimilarity.cs](ConsoleAppSK/Examples/E05_EmbeddingSimilarity.cs): Use the *ITextEmbeddingGenerationService* to generate embeddings for texts and the *TensorPrimitives.CosineSimilarity* to compare the embedded vectors
 - [E06_AudioToText.cs](ConsoleAppSK/Examples/E06_AudioToText.cs): Using the *IAudioToTextService* to transcribe a given audio
-- [E07_AudiotTextToSpeech.cs](ConsoleAppSK/Examples/E07_AudiotTextToSpeech.cs): Using the *ITextToAudioService* to get an audio from text
+- [E07_Audio_TextToSpeech.cs](ConsoleAppSK/Examples/E07_Audio_TextToSpeech.cs): Using the *ITextToAudioService* to get an audio from text
 
 #### `SemanticKernel - WebApiSK`
 
@@ -26,7 +26,7 @@ This repository contains projects demonstrating the use of AI with Microsoft `Se
 - [E04_TextToImage.cs](ConsoleOpenAI/Examples/E04_TextToImage.cs): Using the *ImageClient* to generate an image. Other examples in a comment.
 - [E05_EmbeddingSimilarity.cs](ConsoleOpenAI/Examples/E05_EmbeddingSimilarity.cs): Use the *EmbeddingClient* to generate embeddings for texts and the *TensorPrimitives.CosineSimilarity* to compare the embedded vectors
 - [E06_AudioToText.cs](ConsoleOpenAI/Examples/E06_AudioToText.cs): Using the *AudioClient* to transcribe a given audio
-- [E07_AudiotTextToSpeech.cs](ConsoleOpenAI/Examples/E07_AudiotTextToSpeech.cs): Using the *AudioClient* to generate Speech from Text
+- [E07_Audio_TextToSpeech.cs](ConsoleOpenAI/Examples/E07_Audio_TextToSpeech.cs): Using the *AudioClient* to generate Speech from Text
 
 ## Resources
 
