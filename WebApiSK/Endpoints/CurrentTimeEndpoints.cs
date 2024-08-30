@@ -46,6 +46,9 @@ public static class CurrentTimeEndpoints
         ChatMessageContent result = await chatCompletionService.GetChatMessageContentAsync(chatHistory, _promptExecutionSettings, kernel, ct);
 
         return result.Content!;
+
+        // Manually invoking the plugin
+        // return $"Current time: {await kernel.InvokeAsync<DateTime>("time_plugin", "get_time")}";
     }
 }
 
