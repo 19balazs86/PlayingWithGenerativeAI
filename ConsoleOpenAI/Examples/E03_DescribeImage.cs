@@ -29,9 +29,9 @@ public static class E03_DescribeImage
         BinaryData imageBytes = BinaryData.FromStream(imageStream);
 
         var userChatMessage = ChatMessage.CreateUserMessage(
-            ChatMessageContentPart.CreateTextMessageContentPart("Please describe the following image."),
-            ChatMessageContentPart.CreateImageMessageContentPart(imageBytes, "image/jpeg"));
-            // ChatMessageContentPart.CreateImageMessageContentPart(new Uri("...")));
+            ChatMessageContentPart.CreateTextPart("Please describe the following image."),
+            ChatMessageContentPart.CreateImagePart(imageBytes, "image/jpeg"));
+            // ChatMessageContentPart.CreateImagePart(new Uri("...")));
 
         return userChatMessage;
     }

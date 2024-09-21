@@ -15,9 +15,9 @@ public static class E05_EmbeddingSimilarity
 
         EmbeddingCollection collection = await embeddingClient.GenerateEmbeddingsAsync(embeddingInputs);
 
-        ReadOnlyMemory<float> questionEmbedding         = collection[0].Vector;
-        ReadOnlyMemory<float> hotelDescriptionEmbedding = collection[1].Vector;
-        ReadOnlyMemory<float> dogDescriptionEmbedding   = collection[2].Vector;
+        ReadOnlyMemory<float> questionEmbedding         = collection[0].ToFloats();
+        ReadOnlyMemory<float> hotelDescriptionEmbedding = collection[1].ToFloats();
+        ReadOnlyMemory<float> dogDescriptionEmbedding   = collection[2].ToFloats();
 
         float similarityWithHotel = TensorPrimitives.CosineSimilarity(questionEmbedding.Span, hotelDescriptionEmbedding.Span);
         float similarityWithDog   = TensorPrimitives.CosineSimilarity(questionEmbedding.Span, dogDescriptionEmbedding.Span);

@@ -50,12 +50,12 @@ public static class E01_CompleteChat
         {
             Console.Out.User().WriteLine(prompt = "You: Tell me a LONG story about a dog.");
 
-            var options = new ChatCompletionOptions { MaxTokens = 25 };
+            var options = new ChatCompletionOptions { MaxOutputTokenCount = 25 };
             ChatMessage[] messages = [ChatMessage.CreateUserMessage(prompt)];
 
             ChatCompletion completion = await chatClient.CompleteChatAsync(messages, options);
 
-            Console.Out.AI().WriteLine($"AI: FinishReason: {completion.FinishReason}, TotalTokens: {completion.Usage.TotalTokens}");
+            Console.Out.AI().WriteLine($"AI: FinishReason: {completion.FinishReason}, TotalTokens: {completion.Usage.TotalTokenCount}");
         }
 
         Console.Out.ResetColor().WriteLine("--- End of E01_CompleteChat ---");
