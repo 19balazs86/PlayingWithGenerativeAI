@@ -13,7 +13,7 @@ public static class E05_EmbeddingSimilarity
 
         List<string> embeddingInputs = [_question, _hotelDescription, _DogDescription];
 
-        EmbeddingCollection collection = await embeddingClient.GenerateEmbeddingsAsync(embeddingInputs);
+        OpenAIEmbeddingCollection collection = await embeddingClient.GenerateEmbeddingsAsync(embeddingInputs);
 
         ReadOnlyMemory<float> questionEmbedding         = collection[0].ToFloats();
         ReadOnlyMemory<float> hotelDescriptionEmbedding = collection[1].ToFloats();
