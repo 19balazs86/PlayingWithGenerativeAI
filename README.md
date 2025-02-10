@@ -51,6 +51,10 @@ This repository contains projects demonstrating the use of AI with Microsoft `Se
 - Miscellaneous
   - [Generate images using Azure OpenAI Service](https://code-maze.com/aspnetcore-generate-images-using-openai) (with Azure.AI.OpenAI package) 📓Code-Maze
 
+#### Miscellaneous
+
+- [BOOK of AI](https://thebookof.ai) 📓*Comprehensive guide to getting started with AI services*
+
 ## Prerequisite
 
 - At the moment, you can configure the OpenAI API key since Azure AI is not being used, but the configuration is ready for that
