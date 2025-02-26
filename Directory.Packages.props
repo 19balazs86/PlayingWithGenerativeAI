@@ -5,12 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageVersion Include="Microsoft.SemanticKernel" Version="1.36.1" />
+    <PackageVersion Include="Microsoft.SemanticKernel" Version="1.39.0" />
 
     <PackageVersion Include="OpenAI" Version="2.1.0" />
 
-    <PackageVersion Include="Microsoft.Extensions.Configuration.UserSecrets" Version="9.0.1" />
-    <PackageVersion Include="System.Numerics.Tensors" Version="9.0.1" />
+    <PackageVersion Include="Microsoft.Extensions.Configuration.UserSecrets" Version="9.0.2" />
+    <PackageVersion Include="System.Numerics.Tensors" Version="9.0.2" />
   </ItemGroup>
 
 </Project>
